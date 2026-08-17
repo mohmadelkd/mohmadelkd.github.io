@@ -1,0 +1,9 @@
+Part,Value,Qty,Notes
+Resistor,1k (1%),10,For LED current limiting
+Resistor,10k (1%),4,Voltage dividers
+Capacitor,100nF ceramic,16,Decoupling
+Capacitor,470uF 25V,4,Smoothing
+Diode,1N5819,8,
+Regulator,LM2596,1,Switching step-down
+Connector,2.54mm header,2,Strip
+Terminal,5.08mm 2-pin,4,Output

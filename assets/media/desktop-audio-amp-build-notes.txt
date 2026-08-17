@@ -1,0 +1,17 @@
+# Build notes (demo)
+
+## Tools used
+- Soldering station, flux, 63/37 solder
+- Multimeter, bench supply
+- Drill + step bits, deburring tool
+
+## Steps
+1. Lay out all the parts on the bench first.
+2. Tack-solder the ground plane, then the signal side.
+3. Inspect with a loupe — cold joints hide.
+4. Power up on a current-limited supply before connecting real loads.
+
+## Lessons
+- A fuse on the output is non-negotiable.
+- Label everything; future-you will thank present-you.
+- Take photos before you close the box.

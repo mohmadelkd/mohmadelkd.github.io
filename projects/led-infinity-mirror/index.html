@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LED Infinity Mirror · The Workshop</title>
+<meta name="description" content="Endless tunnel of light from a two-way mirror and a WS2812B ring">
+<script>document.documentElement.classList.add('js');</script>
+<style>.js body{opacity:0}</style>
+<link rel="stylesheet" href="theme.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Fraunces:ital,opsz,wght@1,9..144,400;1,9..144,600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Fraunces:ital,opsz,wght@1,9..144,400;1,9..144,600&display=swap" rel="stylesheet"></noscript>
+<link rel="icon" href="../../assets/media/1786723901232-506325-3182fc18-5347-4955-a95a-873f45f7f53d.png">
+<style>:root{--accent:#8b5cf6;--accent-2:#22d3ee;--radius:12px;--page-max:1120px;--grid-min:320px}</style>
+</head>
+<body data-page="project" class="anim-lively">
+
+
+<main class="project-main">
+  <div class="project-top" data-reveal="fade">
+    <a class="back-btn" href="../../"><span class="back-arrow" aria-hidden="true">&larr;</span> All builds</a>
+    <span class="project-crumb">Home <span>/</span> Project</span>
+  </div>
+  <header class="project-header">
+    <div class="project-title-row" data-reveal>
+      <h1>LED Infinity Mirror</h1>
+      <div class="title-side"><span class="date-badge date-badge-lg">November 2, 2025</span></div>
+    </div>
+    
+    <p class="project-subtitle" data-reveal>Endless tunnel of light from a two-way mirror and a WS2812B ring</p>
+  </header>
+
+  
+  <section class="gallery" data-gallery="[{&quot;path&quot;:&quot;led-infinity-mirror-1.svg&quot;,&quot;caption&quot;:&quot;Lit up in the dark&quot;},{&quot;path&quot;:&quot;led-infinity-mirror-2.svg&quot;,&quot;caption&quot;:&quot;Frame and two-way glass&quot;},{&quot;path&quot;:&quot;led-infinity-mirror-3.svg&quot;,&quot;caption&quot;:&quot;Neopixel ring installed&quot;},{&quot;path&quot;:&quot;led-infinity-mirror-4.svg&quot;,&quot;caption&quot;:&quot;Diffuser layer&quot;},{&quot;path&quot;:&quot;led-infinity-mirror-5.svg&quot;,&quot;caption&quot;:&quot;Hung on the wall behind my desk&quot;}]" data-reveal>
+    <div class="gallery-stage">
+      <div class="gallery-frame"><img class="gallery-main" src="../../assets/media/led-infinity-mirror-1.svg" alt="LED Infinity Mirror"></div>
+      <button class="gal-nav gal-prev" aria-label="Previous">&#8249;</button><button class="gal-nav gal-next" aria-label="Next">&#8250;</button>
+      <div class="gal-bar">
+        <span class="gal-counter">1 / 5</span>
+      </div>
+    </div>
+    <div class="gallery-thumbs"><button type="button" class="gallery-thumb" aria-label="Lit up in the dark"><img src="../../assets/media/led-infinity-mirror-1.svg" alt="" loading="lazy"></button><button type="button" class="gallery-thumb" aria-label="Frame and two-way glass"><img src="../../assets/media/led-infinity-mirror-2.svg" alt="" loading="lazy"></button><button type="button" class="gallery-thumb" aria-label="Neopixel ring installed"><img src="../../assets/media/led-infinity-mirror-3.svg" alt="" loading="lazy"></button><button type="button" class="gallery-thumb" aria-label="Diffuser layer"><img src="../../assets/media/led-infinity-mirror-4.svg" alt="" loading="lazy"></button><button type="button" class="gallery-thumb" aria-label="Hung on the wall behind my desk"><img src="../../assets/media/led-infinity-mirror-5.svg" alt="" loading="lazy"></button></div>
+  </section>
+
+  <section class="content prose" data-reveal><h3>How it works</h3>
+<p>A two-way mirror facing a real mirror with LEDs between them. Light bounces back and forth, so the reflection looks infinite.</p>
+<ul><li>24-pixel <strong>WS2812B ring</strong></li><li>Acrylic disc with one-way mirror film</li><li>3D-printed frame with a chamfered bezel</li></ul>
+<p>The firmware is short — it just walks the hue wheel:</p>
+<pre><code>void loop() {
+  for (int i = 0; i &lt; NUM_LEDS; i++) {
+    leds[i] = CHSV(millis() / 8 + i * 16, 255, 255);
+  }
+  FastLED.show();
+}</code></pre>
+<h3>Power</h3>
+<p>A 5 V 3 A supply runs through a connector in the back. The ring draws about <strong>1.4 A</strong> at full white, so I dialed brightness to 40%.</p>
+<p>It looks <em>amazing</em> in a dark room — and doubles as a night light when I&#39;m soldering.</p></section>
+
+  
+  <section class="content" data-reveal>
+    <h2>3D Preview</h2>
+    <div class="model3d-card">
+      <div class="model3d" data-model="../../assets/media/led-infinity-mirror-frame.stl">
+        <div class="model3d-bar" role="toolbar" aria-label="3D view controls">
+      <span class="model3d-hint">Drag to rotate &middot; scroll to zoom</span>
+      <button type="button" class="model3d-btn" data-view="home" title="Home view">⌂</button>
+      <button type="button" class="model3d-btn" data-view="zoom-in" title="Zoom in">+</button>
+      <button type="button" class="model3d-btn" data-view="zoom-out" title="Zoom out">−</button>
+      <button type="button" class="model3d-btn" data-view="grid" title="Toggle grid">▦</button>
+    </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="content" data-reveal><h2>Links</h2><div class="file-grid"><div class="file-chip link-row">
+        <a class="file-body link-body" href="https://example.com/mirror-fw" target="_blank" rel="noopener" title="https://example.com/mirror-fw">
+          <span class="file-name">Firmware</span>
+          <span class="link-url">example.com/mirror-fw</span>
+        </a>
+        <a class="file-dl" href="https://example.com/mirror-fw" target="_blank" rel="noopener" title="Open Firmware" aria-label="Open Firmware">↗</a>
+      </div><div class="file-chip link-row">
+        <a class="file-body link-body" href="https://example.com/mirror-frame" target="_blank" rel="noopener" title="https://example.com/mirror-frame">
+          <span class="file-name">Thingiverse</span>
+          <span class="link-url">example.com/mirror-frame</span>
+        </a>
+        <a class="file-dl" href="https://example.com/mirror-frame" target="_blank" rel="noopener" title="Open Thingiverse" aria-label="Open Thingiverse">↗</a>
+      </div></div></section>
+  <section class="content" data-reveal><h2>Files</h2><div class="file-grid"><div class="file-chip">
+        <a class="file-body" href="../../assets/media/led-infinity-mirror-firmware.ino" download="led-infinity-mirror-firmware.ino">
+          <span class="file-badge">INO</span>
+          <span class="file-name">led-infinity-mirror-firmware.ino</span>
+          <span class="file-size">404 B</span>
+        </a>
+        <button type="button" class="file-preview" data-preview="../../assets/media/led-infinity-mirror-firmware.ino" data-type="text" data-name="led-infinity-mirror-firmware.ino" title="Preview led-infinity-mirror-firmware.ino">Preview</button>
+        <a class="file-dl" href="../../assets/media/led-infinity-mirror-firmware.ino" download="led-infinity-mirror-firmware.ino" title="Download led-infinity-mirror-firmware.ino" aria-label="Download led-infinity-mirror-firmware.ino">↓</a>
+      </div><div class="file-chip">
+        <a class="file-body" href="../../assets/media/led-infinity-mirror-assembly.md" download="led-infinity-mirror-assembly.md">
+          <span class="file-badge">MD</span>
+          <span class="file-name">led-infinity-mirror-assembly.md</span>
+          <span class="file-size">298 B</span>
+        </a>
+        <button type="button" class="file-preview" data-preview="../../assets/media/led-infinity-mirror-assembly.md" data-type="text" data-name="led-infinity-mirror-assembly.md" title="Preview led-infinity-mirror-assembly.md">Preview</button>
+        <a class="file-dl" href="../../assets/media/led-infinity-mirror-assembly.md" download="led-infinity-mirror-assembly.md" title="Download led-infinity-mirror-assembly.md" aria-label="Download led-infinity-mirror-assembly.md">↓</a>
+      </div></div></section>
+
+  
+
+  
+  <nav class="proj-nav" data-reveal>
+    <a class="proj-nav-link" href="../atx-bench-power-supply/"><span class="pn-dir">← Previous</span><span class="pn-title">ATX Bench Power Supply</span></a>
+    <a class="proj-nav-link next" href="../split-mechanical-keyboard/"><span class="pn-dir">Next →</span><span class="pn-title">Split Mechanical Keyboard</span></a>
+  </nav>
+</main>
+<footer class="footer" data-reveal="fade"><div class="footer-inner"></div></footer>
+<div class="lightbox" hidden>
+  <div class="lb-panel">
+    <div class="lb-head">
+      <span class="lb-title">LED Infinity Mirror</span>
+      <span class="lb-counter">1 / 5</span>
+      <button type="button" class="lb-close" aria-label="Close">&times;</button>
+    </div>
+    <div class="lb-stage">
+      <img class="lb-img" alt="">
+      <div class="lb-busy" aria-hidden="true"><span></span></div>
+      <button type="button" class="lb-nav lb-prev" aria-label="Previous">&#8249;</button><button type="button" class="lb-nav lb-next" aria-label="Next">&#8250;</button>
+    </div>
+  </div>
+</div>
+<script>window.__SITE__ = {"siteName":"The Workshop","tagline":"Where I like figuring out how things work, taking things apart, and building whatever comes to mind.\n\nA bit of *electronics*, *CAD*, *3D printing*, *computers* , and whatever else I happen to get interested in.\n\nI don't really have a specific box I fit into — I just like making things.","about":"","links":[],"showDates":true,"showMeta":false,"favicon":"1786723901232-506325-3182fc18-5347-4955-a95a-873f45f7f53d.png","social":[],"heroOverline":"Workshop active","termTitle":"root@workshop: ~","termScan":"workshop --scan","termFoot":"signal nominal","componentsTitle":"Parts","componentsSub":"","showComponents":true,"projectsTitle":"Projects","projectsSub":"","showProjects":true,"emptyProjects":"No projects yet.","backLabel":"All builds","tabTitle":""};</script>
+<script>window.__PROJECT__ = {"id":"686462b1116e","slug":"led-infinity-mirror","title":"LED Infinity Mirror","subtitle":"Endless tunnel of light from a two-way mirror and a WS2812B ring","date":"2025-11-02","featured":false,"description":"## How it works\n\nA two-way mirror facing a real mirror with LEDs between them. Light bounces back and forth, so the reflection looks infinite.\n\n- 24-pixel **WS2812B ring**\n- Acrylic disc with one-way mirror film\n- 3D-printed frame with a chamfered bezel\n\nThe firmware is short — it just walks the hue wheel:\n\n```cpp\nvoid loop() {\n  for (int i = 0; i \u003c NUM_LEDS; i++) {\n    leds[i] = CHSV(millis() / 8 + i * 16, 255, 255);\n  }\n  FastLED.show();\n}\n```\n\n## Power\n\nA 5 V 3 A supply runs through a connector in the back. The ring draws about **1.4 A** at full white, so I dialed brightness to 40%.\n\nIt looks *amazing* in a dark room — and doubles as a night light when I'm soldering.","links":[{"label":"Firmware","url":"https://example.com/mirror-fw"},{"label":"Thingiverse","url":"https://example.com/mirror-frame"}],"photos":[{"path":"led-infinity-mirror-1.svg","caption":"Lit up in the dark"},{"path":"led-infinity-mirror-2.svg","caption":"Frame and two-way glass"},{"path":"led-infinity-mirror-3.svg","caption":"Neopixel ring installed"},{"path":"led-infinity-mirror-4.svg","caption":"Diffuser layer"},{"path":"led-infinity-mirror-5.svg","caption":"Hung on the wall behind my desk"}],"files":[{"path":"led-infinity-mirror-firmware.ino","name":"led-infinity-mirror-firmware.ino"},{"path":"led-infinity-mirror-frame.stl","name":"led-infinity-mirror-frame.stl"},{"path":"led-infinity-mirror-assembly.md","name":"led-infinity-mirror-assembly.md"}],"createdAt":"2026-08-14T15:41:31.027Z","updatedAt":"2026-08-14T15:41:31.027Z","kind":"project","status":"done","related":[],"model3d":"led-infinity-mirror-frame.stl"};</script>
+<script>window.__MEDIA_PREFIX__ = "../../assets/media/";</script>
+<script type="importmap">{"imports":{"three":"https://unpkg.com/three@0.160.0/build/three.module.js","three/addons/":"https://unpkg.com/three@0.160.0/examples/jsm/","three/examples/jsm/":"https://unpkg.com/three@0.160.0/examples/jsm/"}}</script>
+<script type="module" src="app3d.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

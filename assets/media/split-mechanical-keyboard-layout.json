@@ -1,0 +1,13 @@
+{
+  "keyboard_name": "split_3x5_demo",
+  "keyboard_brand": "workshop",
+  "layouts": {
+    "LAYOUT_split_3x5_3": {
+      "layout": [
+        {"label":"Q","x":0,"y":0}, {"label":"W","x":1,"y":0},
+        {"label":"E","x":2,"y":0}, {"label":"R","x":3,"y":0},
+        {"label":"T","x":4,"y":0}, {"label":"Y","x":6.5,"y":0}
+      ]
+    }
+  }
+}

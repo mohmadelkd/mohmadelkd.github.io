@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+<defs>
+  <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#334155"/>
+    <stop offset="1" stop-color="#0f172a"/>
+  </linearGradient>
+  <linearGradient id="sheen" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="rgba(255,255,255,0.10)"/>
+    <stop offset="1" stop-color="rgba(255,255,255,0)"/>
+  </linearGradient>
+  <pattern id="gr" width="72" height="72" patternUnits="userSpaceOnUse">
+    <path d="M72 0H0V72" fill="none" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  </pattern>
+  <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+    <stop offset="0" stop-color="rgba(255,255,255,0.34)"/>
+    <stop offset="1" stop-color="rgba(255,255,255,0)"/>
+  </radialGradient>
+  <linearGradient id="vig" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="rgba(0,0,0,0)"/>
+    <stop offset="0.78" stop-color="rgba(0,0,0,0)"/>
+    <stop offset="1" stop-color="rgba(0,0,0,0.28)"/>
+  </linearGradient>
+  <pattern id="pts" width="9" height="9" patternUnits="userSpaceOnUse">
+    <circle cx="1.5" cy="1.5" r="1.5" fill="rgba(255,255,255,0.18)"/>
+  </pattern>
+</defs>
+<rect width="1600" height="1000" fill="url(#g)"/>
+<rect width="1600" height="1000" fill="rgba(255,255,255,0.03)"/>
+<rect width="1600" height="1000" fill="url(#pts)" opacity="0.5"/>
+<rect width="1600" height="1000" fill="url(#gr)"/>
+<path d="M0 0 L1600 0 L0 300 Z" fill="url(#sheen)"/>
+
+<circle cx="100" cy="530" r="230" fill="url(#glow)"/>
+<circle cx="1200" cy="400" r="280" fill="url(#glow)"/>
+<rect width="1600" height="1000" fill="url(#vig)"/>
+<path d="M0 0 L1600 250 L1600 320 L0 120 Z" fill="#38bdf8" opacity="0.18"/>
+<g transform="translate(0,640)" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="10"><path d="M0 40 C 200 0, 340 80, 540 40 S 880 0, 1100 40"/><path d="M0 90 C 220 50, 360 130, 560 90 S 900 50, 1120 90" stroke="rgba(255,255,255,0.22)"/><path d="M0 140 C 240 100, 380 180, 580 140 S 920 100, 1140 140" stroke="rgba(255,255,255,0.14)"/></g>
+<text x="72" y="150" font-family="'JetBrains Mono',monospace" font-size="24" letter-spacing="6" fill="rgba(255,255,255,0.72)">DEMO PHOTO 3 / 6</text>
+<text x="70" y="880" font-family="'Space Grotesk','Segoe UI',sans-serif" font-size="110" font-weight="700" fill="rgba(255,255,255,0.96)">Desktop Amp</text>
+<text x="72" y="950" font-family="'JetBrains Mono',monospace" font-size="26" letter-spacing="3" fill="rgba(255,255,255,0.6)">PROJECT 03 · WORKSHOP</text>
+</svg>

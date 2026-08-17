@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Desktop Audio Amp · The Workshop</title>
+<meta name="description" content="A small TPA3116 amp in a machined box, with a power filter">
+<script>document.documentElement.classList.add('js');</script>
+<style>.js body{opacity:0}</style>
+<link rel="stylesheet" href="theme.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Fraunces:ital,opsz,wght@1,9..144,400;1,9..144,600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Fraunces:ital,opsz,wght@1,9..144,400;1,9..144,600&display=swap" rel="stylesheet"></noscript>
+<link rel="icon" href="../../assets/media/1786723901232-506325-3182fc18-5347-4955-a95a-873f45f7f53d.png">
+<style>:root{--accent:#8b5cf6;--accent-2:#22d3ee;--radius:12px;--page-max:1120px;--grid-min:320px}</style>
+</head>
+<body data-page="project" class="anim-lively">
+
+
+<main class="project-main">
+  <div class="project-top" data-reveal="fade">
+    <a class="back-btn" href="../../"><span class="back-arrow" aria-hidden="true">&larr;</span> All builds</a>
+    <span class="project-crumb">Home <span>/</span> Project</span>
+  </div>
+  <header class="project-header">
+    <div class="project-title-row" data-reveal>
+      <h1>Desktop Audio Amp</h1>
+      <div class="title-side"><span class="date-badge date-badge-lg">June 11, 2024</span></div>
+    </div>
+    
+    <p class="project-subtitle" data-reveal>A small TPA3116 amp in a machined box, with a power filter</p>
+  </header>
+
+  
+  <section class="gallery" data-gallery="[{&quot;path&quot;:&quot;desktop-audio-amp-1.svg&quot;,&quot;caption&quot;:&quot;Finished amp next to the speakers&quot;},{&quot;path&quot;:&quot;desktop-audio-amp-2.svg&quot;,&quot;caption&quot;:&quot;Enclosure wiring&quot;},{&quot;path&quot;:&quot;desktop-audio-amp-3.svg&quot;,&quot;caption&quot;:&quot;Power section&quot;},{&quot;path&quot;:&quot;desktop-audio-amp-4.svg&quot;,&quot;caption&quot;:&quot;Output stage close-up&quot;},{&quot;path&quot;:&quot;desktop-audio-amp-5.svg&quot;,&quot;caption&quot;:&quot;On the desk&quot;},{&quot;path&quot;:&quot;desktop-audio-amp-6.svg&quot;,&quot;caption&quot;:&quot;Under the hood&quot;}]" data-reveal>
+    <div class="gallery-stage">
+      <div class="gallery-frame"><img class="gallery-main" src="../../assets/media/desktop-audio-amp-1.svg" alt="Desktop Audio Amp"></div>
+      <button class="gal-nav gal-prev" aria-label="Previous">&#8249;</button><button class="gal-nav gal-next" aria-label="Next">&#8250;</button>
+      <div class="gal-bar">
+        <span class="gal-counter">1 / 6</span>
+      </div>
+    </div>
+    <div class="gallery-thumbs"><button type="button" class="gallery-thumb" aria-label="Finished amp next to the speakers"><img src="../../assets/media/desktop-audio-amp-1.svg" alt="" loading="lazy"></button><button type="button" class="gallery-thumb" aria-label="Enclosure wiring"><img src="../../assets/media/desktop-audio-amp-2.svg" alt="" loading="lazy"></button><button type="button" class="gallery-thumb" aria-label="Power section"><img src="../../assets/media/desktop-audio-amp-3.svg" alt="" loading="lazy"></button><button type="button" class="gallery-thumb" aria-label="Output stage close-up"><img src="../../assets/media/desktop-audio-amp-4.svg" alt="" loading="lazy"></button><button type="button" class="gallery-thumb" aria-label="On the desk"><img src="../../assets/media/desktop-audio-amp-5.svg" alt="" loading="lazy"></button><button type="button" class="gallery-thumb" aria-label="Under the hood"><img src="../../assets/media/desktop-audio-amp-6.svg" alt="" loading="lazy"></button></div>
+  </section>
+
+  <section class="content prose" data-reveal><h3>The project</h3>
+<p>A ~30 W per channel desktop amp built around a <strong>TPA3116D2</strong> module, an aluminum enclosure, and a clean 19 V supply.</p>
+<ul><li>Added a <strong>power filter</strong> and a soft-start circuit</li><li>Replaced the module&#39;s cheap knobs with proper Alps potentiometers</li><li>Crowned it with a brushed front panel</li></ul>
+<pre><code>Input -&gt; vol pot -&gt; TPA3116D2 -&gt; speaker out
+PSU   -&gt; filter board -&gt; module + soft-start</code></pre>
+<h3>Listening</h3>
+<p>Flat frequency response, dead quiet on moderate gain. Thermal paste between the module and the case keeps it cool at a whole afternoon of <em>lo-fi</em>.</p>
+<p>Full schematic and BOM are in the files.</p></section>
+
+  
+  <section class="content" data-reveal>
+    <h2>3D Preview</h2>
+    <div class="model3d-card">
+      <div class="model3d" data-model="../../assets/media/desktop-audio-amp-enclosure.stl">
+        <div class="model3d-bar" role="toolbar" aria-label="3D view controls">
+      <span class="model3d-hint">Drag to rotate &middot; scroll to zoom</span>
+      <button type="button" class="model3d-btn" data-view="home" title="Home view">⌂</button>
+      <button type="button" class="model3d-btn" data-view="zoom-in" title="Zoom in">+</button>
+      <button type="button" class="model3d-btn" data-view="zoom-out" title="Zoom out">−</button>
+      <button type="button" class="model3d-btn" data-view="grid" title="Toggle grid">▦</button>
+    </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="content" data-reveal><h2>Links</h2><div class="file-grid"><div class="file-chip link-row">
+        <a class="file-body link-body" href="https://example.com/amp-schematic" target="_blank" rel="noopener" title="https://example.com/amp-schematic">
+          <span class="file-name">Schematic</span>
+          <span class="link-url">example.com/amp-schematic</span>
+        </a>
+        <a class="file-dl" href="https://example.com/amp-schematic" target="_blank" rel="noopener" title="Open Schematic" aria-label="Open Schematic">↗</a>
+      </div><div class="file-chip link-row">
+        <a class="file-body link-body" href="https://example.com/amp-io" target="_blank" rel="noopener" title="https://example.com/amp-io">
+          <span class="file-name">Instructables</span>
+          <span class="link-url">example.com/amp-io</span>
+        </a>
+        <a class="file-dl" href="https://example.com/amp-io" target="_blank" rel="noopener" title="Open Instructables" aria-label="Open Instructables">↗</a>
+      </div></div></section>
+  <section class="content" data-reveal><h2>Files</h2><div class="file-grid"><div class="file-chip">
+        <a class="file-body" href="../../assets/media/desktop-audio-amp-schematic.svg" download="desktop-audio-amp-schematic.svg">
+          <span class="file-badge">SVG</span>
+          <span class="file-name">desktop-audio-amp-schematic.svg</span>
+          <span class="file-size">1.5 KB</span>
+        </a>
+        <button type="button" class="file-preview" data-preview="../../assets/media/desktop-audio-amp-schematic.svg" data-type="image" data-name="desktop-audio-amp-schematic.svg" title="Preview desktop-audio-amp-schematic.svg">Preview</button>
+        <a class="file-dl" href="../../assets/media/desktop-audio-amp-schematic.svg" download="desktop-audio-amp-schematic.svg" title="Download desktop-audio-amp-schematic.svg" aria-label="Download desktop-audio-amp-schematic.svg">↓</a>
+      </div><div class="file-chip">
+        <a class="file-body" href="../../assets/media/desktop-audio-amp-bom.csv" download="desktop-audio-amp-bom.csv">
+          <span class="file-badge">CSV</span>
+          <span class="file-name">desktop-audio-amp-bom.csv</span>
+          <span class="file-size">290 B</span>
+        </a>
+        <button type="button" class="file-preview" data-preview="../../assets/media/desktop-audio-amp-bom.csv" data-type="text" data-name="desktop-audio-amp-bom.csv" title="Preview desktop-audio-amp-bom.csv">Preview</button>
+        <a class="file-dl" href="../../assets/media/desktop-audio-amp-bom.csv" download="desktop-audio-amp-bom.csv" title="Download desktop-audio-amp-bom.csv" aria-label="Download desktop-audio-amp-bom.csv">↓</a>
+      </div><div class="file-chip">
+        <a class="file-body" href="../../assets/media/desktop-audio-amp-build-notes.txt" download="desktop-audio-amp-build-notes.txt">
+          <span class="file-badge">TXT</span>
+          <span class="file-name">desktop-audio-amp-build-notes.txt</span>
+          <span class="file-size">513 B</span>
+        </a>
+        <button type="button" class="file-preview" data-preview="../../assets/media/desktop-audio-amp-build-notes.txt" data-type="text" data-name="desktop-audio-amp-build-notes.txt" title="Preview desktop-audio-amp-build-notes.txt">Preview</button>
+        <a class="file-dl" href="../../assets/media/desktop-audio-amp-build-notes.txt" download="desktop-audio-amp-build-notes.txt" title="Download desktop-audio-amp-build-notes.txt" aria-label="Download desktop-audio-amp-build-notes.txt">↓</a>
+      </div><div class="file-chip">
+        <a class="file-body" href="../../assets/media/desktop-audio-amp-datasheet.pdf" download="desktop-audio-amp-datasheet.pdf">
+          <span class="file-badge">PDF</span>
+          <span class="file-name">desktop-audio-amp-datasheet.pdf</span>
+          <span class="file-size">1.4 KB</span>
+        </a>
+        <button type="button" class="file-preview" data-preview="../../assets/media/desktop-audio-amp-datasheet.pdf" data-type="pdf" data-name="desktop-audio-amp-datasheet.pdf" title="Preview desktop-audio-amp-datasheet.pdf">Preview</button>
+        <a class="file-dl" href="../../assets/media/desktop-audio-amp-datasheet.pdf" download="desktop-audio-amp-datasheet.pdf" title="Download desktop-audio-amp-datasheet.pdf" aria-label="Download desktop-audio-amp-datasheet.pdf">↓</a>
+      </div></div></section>
+
+  <section class="content rel-section" data-reveal>
+    <h2>Built with</h2>
+    <div class="file-grid">
+      <a class="file-chip link-row rel-row" href="../../components/amp-fan-shroud/">
+        <span class="file-body link-body">
+          <span class="type-badge">Component</span>
+          <span class="file-name">Amp Cooling Fan Shroud</span>
+          <span class="link-url">Printed shroud that funnels the enclosure fan over the amp module</span>
+        </span>
+        <span class="file-dl rel-go" aria-hidden="true">→</span>
+      </a></div>
+  </section>
+
+  
+  <nav class="proj-nav" data-reveal>
+    <a class="proj-nav-link" href="../split-mechanical-keyboard/"><span class="pn-dir">← Previous</span><span class="pn-title">Split Mechanical Keyboard</span></a>
+    <span></span>
+  </nav>
+</main>
+<footer class="footer" data-reveal="fade"><div class="footer-inner"></div></footer>
+<div class="lightbox" hidden>
+  <div class="lb-panel">
+    <div class="lb-head">
+      <span class="lb-title">Desktop Audio Amp</span>
+      <span class="lb-counter">1 / 6</span>
+      <button type="button" class="lb-close" aria-label="Close">&times;</button>
+    </div>
+    <div class="lb-stage">
+      <img class="lb-img" alt="">
+      <div class="lb-busy" aria-hidden="true"><span></span></div>
+      <button type="button" class="lb-nav lb-prev" aria-label="Previous">&#8249;</button><button type="button" class="lb-nav lb-next" aria-label="Next">&#8250;</button>
+    </div>
+  </div>
+</div>
+<script>window.__SITE__ = {"siteName":"The Workshop","tagline":"Where I like figuring out how things work, taking things apart, and building whatever comes to mind.\n\nA bit of *electronics*, *CAD*, *3D printing*, *computers* , and whatever else I happen to get interested in.\n\nI don't really have a specific box I fit into — I just like making things.","about":"","links":[],"showDates":true,"showMeta":false,"favicon":"1786723901232-506325-3182fc18-5347-4955-a95a-873f45f7f53d.png","social":[],"heroOverline":"Workshop active","termTitle":"root@workshop: ~","termScan":"workshop --scan","termFoot":"signal nominal","componentsTitle":"Parts","componentsSub":"","showComponents":true,"projectsTitle":"Projects","projectsSub":"","showProjects":true,"emptyProjects":"No projects yet.","backLabel":"All builds","tabTitle":""};</script>
+<script>window.__PROJECT__ = {"id":"18b18b9a3373","slug":"desktop-audio-amp","title":"Desktop Audio Amp","subtitle":"A small TPA3116 amp in a machined box, with a power filter","date":"2024-06-11","featured":false,"description":"## The project\n\nA ~30 W per channel desktop amp built around a **TPA3116D2** module, an aluminum enclosure, and a clean 19 V supply.\n\n- Added a **power filter** and a soft-start circuit\n- Replaced the module's cheap knobs with proper Alps potentiometers\n- Crowned it with a brushed front panel\n\n```\nInput -> vol pot -> TPA3116D2 -> speaker out\nPSU   -> filter board -> module + soft-start\n```\n\n## Listening\n\nFlat frequency response, dead quiet on moderate gain. Thermal paste between the module and the case keeps it cool at a whole afternoon of *lo-fi*.\n\nFull schematic and BOM are in the files.","links":[{"label":"Schematic","url":"https://example.com/amp-schematic"},{"label":"Instructables","url":"https://example.com/amp-io"}],"photos":[{"path":"desktop-audio-amp-1.svg","caption":"Finished amp next to the speakers"},{"path":"desktop-audio-amp-2.svg","caption":"Enclosure wiring"},{"path":"desktop-audio-amp-3.svg","caption":"Power section"},{"path":"desktop-audio-amp-4.svg","caption":"Output stage close-up"},{"path":"desktop-audio-amp-5.svg","caption":"On the desk"},{"path":"desktop-audio-amp-6.svg","caption":"Under the hood"}],"files":[{"path":"desktop-audio-amp-enclosure.stl","name":"desktop-audio-amp-enclosure.stl"},{"path":"desktop-audio-amp-schematic.svg","name":"desktop-audio-amp-schematic.svg"},{"path":"desktop-audio-amp-bom.csv","name":"desktop-audio-amp-bom.csv"},{"path":"desktop-audio-amp-build-notes.txt","name":"desktop-audio-amp-build-notes.txt"},{"path":"desktop-audio-amp-datasheet.pdf","name":"desktop-audio-amp-datasheet.pdf"}],"createdAt":"2026-08-14T15:41:31.029Z","updatedAt":"2026-08-14T15:41:31.029Z","kind":"project","status":"done","related":["935cdc9c050a"],"model3d":"desktop-audio-amp-enclosure.stl"};</script>
+<script>window.__MEDIA_PREFIX__ = "../../assets/media/";</script>
+<script type="importmap">{"imports":{"three":"https://unpkg.com/three@0.160.0/build/three.module.js","three/addons/":"https://unpkg.com/three@0.160.0/examples/jsm/","three/examples/jsm/":"https://unpkg.com/three@0.160.0/examples/jsm/"}}</script>
+<script type="module" src="app3d.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

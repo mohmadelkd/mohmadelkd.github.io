@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ATX Bench Power Supply · The Workshop</title>
+<meta name="description" content="Turned a dead computer PSU into a lab-grade desk supply">
+<script>document.documentElement.classList.add('js');</script>
+<style>.js body{opacity:0}</style>
+<link rel="stylesheet" href="theme.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Fraunces:ital,opsz,wght@1,9..144,400;1,9..144,600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Fraunces:ital,opsz,wght@1,9..144,400;1,9..144,600&display=swap" rel="stylesheet"></noscript>
+<link rel="icon" href="../../assets/media/1786723901232-506325-3182fc18-5347-4955-a95a-873f45f7f53d.png">
+<style>:root{--accent:#8b5cf6;--accent-2:#22d3ee;--radius:12px;--page-max:1120px;--grid-min:320px}</style>
+</head>
+<body data-page="project" class="anim-lively">
+
+
+<main class="project-main">
+  <div class="project-top" data-reveal="fade">
+    <a class="back-btn" href="../../"><span class="back-arrow" aria-hidden="true">&larr;</span> All builds</a>
+    <span class="project-crumb">Home <span>/</span> Project</span>
+  </div>
+  <header class="project-header">
+    <div class="project-title-row" data-reveal>
+      <h1>ATX Bench Power Supply</h1>
+      <div class="title-side"><div class="version-select" data-version-switch>
+      <button type="button" class="version-select-btn" aria-haspopup="listbox" aria-expanded="false">v2 · latest<span class="version-select-caret" aria-hidden="true"></span></button>
+      <div class="version-select-menu" role="listbox"><a class="version-select-opt selected" href="./" role="option" aria-selected="true">v2 · latest</a><a class="version-select-opt" href="./v1/" role="option" aria-selected="false">v1</a></div>
+    </div><span class="date-badge date-badge-lg">March 14, 2026</span></div>
+    </div>
+    
+    <p class="project-subtitle" data-reveal>Turned a dead computer PSU into a lab-grade desk supply</p>
+  </header>
+
+  
+  <section class="gallery" data-gallery="[{&quot;path&quot;:&quot;atx-bench-power-supply-1.svg&quot;,&quot;caption&quot;:&quot;Finished unit on the desk&quot;},{&quot;path&quot;:&quot;atx-bench-power-supply-2.svg&quot;,&quot;caption&quot;:&quot;Internals and wiring&quot;},{&quot;path&quot;:&quot;atx-bench-power-supply-3.svg&quot;,&quot;caption&quot;:&quot;Output panel close-up&quot;},{&quot;path&quot;:&quot;atx-bench-power-supply-4.svg&quot;,&quot;caption&quot;:&quot;Load test with a car bulb&quot;},{&quot;path&quot;:&quot;atx-bench-power-supply-5.svg&quot;,&quot;caption&quot;:&quot;Bench setup with it in use&quot;}]" data-reveal>
+    <div class="gallery-stage">
+      <div class="gallery-frame"><img class="gallery-main" src="../../assets/media/atx-bench-power-supply-1.svg" alt="ATX Bench Power Supply"></div>
+      <button class="gal-nav gal-prev" aria-label="Previous">&#8249;</button><button class="gal-nav gal-next" aria-label="Next">&#8250;</button>
+      <div class="gal-bar">
+        <span class="gal-counter">1 / 5</span>
+      </div>
+    </div>
+    <div class="gallery-thumbs"><button type="button" class="gallery-thumb" aria-label="Finished unit on the desk"><img src="../../assets/media/atx-bench-power-supply-1.svg" alt="" loading="lazy"></button><button type="button" class="gallery-thumb" aria-label="Internals and wiring"><img src="../../assets/media/atx-bench-power-supply-2.svg" alt="" loading="lazy"></button><button type="button" class="gallery-thumb" aria-label="Output panel close-up"><img src="../../assets/media/atx-bench-power-supply-3.svg" alt="" loading="lazy"></button><button type="button" class="gallery-thumb" aria-label="Load test with a car bulb"><img src="../../assets/media/atx-bench-power-supply-4.svg" alt="" loading="lazy"></button><button type="button" class="gallery-thumb" aria-label="Bench setup with it in use"><img src="../../assets/media/atx-bench-power-supply-5.svg" alt="" loading="lazy"></button></div>
+  </section>
+
+  <section class="content prose" data-reveal><h3>The build</h3>
+<p>A dead 450 W ATX supply became the most-used thing on my bench. One weekend, a handful of parts, and a healthy respect for capacitors.</p>
+<ul><li><strong>Kept</strong> the +12 V and +5 V rails, insulated the rest</li><li><strong>Added</strong> a switchable output panel with banana jacks</li><li><strong>Wired</strong> in a volt/amp meter with a 10 A shunt</li></ul>
+<blockquote>Capacitors hold a deadly charge. I discharged everything twice before touching it.</blockquote>
+<h3>Wiring</h3>
+<pre><code>PSU +12V  -&gt;  terminal strip  -&gt;  meter  -&gt;  banana jack (red)
+PSU GND   -&gt;  terminal strip  -&gt;  meter shunt -&gt;  banana jack (black)</code></pre>
+<h3>What I&#39;d change</h3>
+<p>A proper <em>current-limit</em> module beats relying on the PSU&#39;s own protection. Design notes and a parts list are in the files below.</p></section>
+
+  
+  <section class="content" data-reveal>
+    <h2>3D Preview</h2>
+    <div class="model3d-card">
+      <div class="model3d" data-model="../../assets/media/1786758971279-948495-case.stl">
+        <div class="model3d-bar" role="toolbar" aria-label="3D view controls">
+      <span class="model3d-hint">Drag to rotate &middot; scroll to zoom</span>
+      <button type="button" class="model3d-btn" data-view="home" title="Home view">⌂</button>
+      <button type="button" class="model3d-btn" data-view="zoom-in" title="Zoom in">+</button>
+      <button type="button" class="model3d-btn" data-view="zoom-out" title="Zoom out">−</button>
+      <button type="button" class="model3d-btn" data-view="grid" title="Toggle grid">▦</button>
+    </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="content" data-reveal><h2>Links</h2><div class="file-grid"><div class="file-chip link-row">
+        <a class="file-body link-body" href="https://example.com/build-log" target="_blank" rel="noopener" title="https://example.com/build-log">
+          <span class="file-name">Build Log</span>
+          <span class="link-url">example.com/build-log</span>
+        </a>
+        <a class="file-dl" href="https://example.com/build-log" target="_blank" rel="noopener" title="Open Build Log" aria-label="Open Build Log">↗</a>
+      </div><div class="file-chip link-row">
+        <a class="file-body link-body" href="https://example.com/atx-hackaday" target="_blank" rel="noopener" title="https://example.com/atx-hackaday">
+          <span class="file-name">Hackaday</span>
+          <span class="link-url">example.com/atx-hackaday</span>
+        </a>
+        <a class="file-dl" href="https://example.com/atx-hackaday" target="_blank" rel="noopener" title="Open Hackaday" aria-label="Open Hackaday">↗</a>
+      </div><div class="file-chip link-row">
+        <a class="file-body link-body" href="https://github.com/" target="_blank" rel="noopener" title="https://github.com/">
+          <span class="file-name">GitHub</span>
+          <span class="link-url">github.com</span>
+        </a>
+        <a class="file-dl" href="https://github.com/" target="_blank" rel="noopener" title="Open GitHub" aria-label="Open GitHub">↗</a>
+      </div></div></section>
+  <section class="content" data-reveal><h2>Files</h2><div class="file-grid"><div class="file-chip">
+        <a class="file-body" href="../../assets/media/atx-bench-power-supply-wiring.svg" download="atx-bench-power-supply-wiring.svg">
+          <span class="file-badge">SVG</span>
+          <span class="file-name">atx-bench-power-supply-wiring.svg</span>
+          <span class="file-size">1.5 KB</span>
+        </a>
+        <button type="button" class="file-preview" data-preview="../../assets/media/atx-bench-power-supply-wiring.svg" data-type="image" data-name="atx-bench-power-supply-wiring.svg" title="Preview atx-bench-power-supply-wiring.svg">Preview</button>
+        <a class="file-dl" href="../../assets/media/atx-bench-power-supply-wiring.svg" download="atx-bench-power-supply-wiring.svg" title="Download atx-bench-power-supply-wiring.svg" aria-label="Download atx-bench-power-supply-wiring.svg">↓</a>
+      </div><div class="file-chip">
+        <a class="file-body" href="../../assets/media/atx-bench-power-supply-case.stl" download="atx-bench-power-supply-case.stl">
+          <span class="file-badge">STL</span>
+          <span class="file-name">atx-bench-power-supply-case.stl</span>
+          <span class="file-size">12 KB</span>
+        </a>
+        <button type="button" class="file-preview" data-preview="../../assets/media/atx-bench-power-supply-case.stl" data-type="model" data-name="atx-bench-power-supply-case.stl" title="Preview atx-bench-power-supply-case.stl">Preview</button>
+        <a class="file-dl" href="../../assets/media/atx-bench-power-supply-case.stl" download="atx-bench-power-supply-case.stl" title="Download atx-bench-power-supply-case.stl" aria-label="Download atx-bench-power-supply-case.stl">↓</a>
+      </div><div class="file-chip">
+        <a class="file-body" href="../../assets/media/atx-bench-power-supply-build-notes.txt" download="atx-bench-power-supply-build-notes.txt">
+          <span class="file-badge">TXT</span>
+          <span class="file-name">atx-bench-power-supply-build-notes.txt</span>
+          <span class="file-size">513 B</span>
+        </a>
+        <button type="button" class="file-preview" data-preview="../../assets/media/atx-bench-power-supply-build-notes.txt" data-type="text" data-name="atx-bench-power-supply-build-notes.txt" title="Preview atx-bench-power-supply-build-notes.txt">Preview</button>
+        <a class="file-dl" href="../../assets/media/atx-bench-power-supply-build-notes.txt" download="atx-bench-power-supply-build-notes.txt" title="Download atx-bench-power-supply-build-notes.txt" aria-label="Download atx-bench-power-supply-build-notes.txt">↓</a>
+      </div><div class="file-chip">
+        <a class="file-body" href="../../assets/media/atx-bench-power-supply-bom.csv" download="atx-bench-power-supply-bom.csv">
+          <span class="file-badge">CSV</span>
+          <span class="file-name">atx-bench-power-supply-bom.csv</span>
+          <span class="file-size">290 B</span>
+        </a>
+        <button type="button" class="file-preview" data-preview="../../assets/media/atx-bench-power-supply-bom.csv" data-type="text" data-name="atx-bench-power-supply-bom.csv" title="Preview atx-bench-power-supply-bom.csv">Preview</button>
+        <a class="file-dl" href="../../assets/media/atx-bench-power-supply-bom.csv" download="atx-bench-power-supply-bom.csv" title="Download atx-bench-power-supply-bom.csv" aria-label="Download atx-bench-power-supply-bom.csv">↓</a>
+      </div><div class="file-chip">
+        <a class="file-body" href="../../assets/media/1786758872125-321894-FAN-HOLDER.f3d" download="FAN HOLDER.f3d">
+          <span class="file-badge">F3D</span>
+          <span class="file-name">FAN HOLDER.f3d</span>
+          <span class="file-size">179 KB</span>
+        </a>
+        
+        <a class="file-dl" href="../../assets/media/1786758872125-321894-FAN-HOLDER.f3d" download="FAN HOLDER.f3d" title="Download FAN HOLDER.f3d" aria-label="Download FAN HOLDER.f3d">↓</a>
+      </div></div></section>
+
+  
+
+  
+  <nav class="proj-nav" data-reveal>
+    <span></span>
+    <a class="proj-nav-link next" href="../led-infinity-mirror/"><span class="pn-dir">Next →</span><span class="pn-title">LED Infinity Mirror</span></a>
+  </nav>
+</main>
+<footer class="footer" data-reveal="fade"><div class="footer-inner"></div></footer>
+<div class="lightbox" hidden>
+  <div class="lb-panel">
+    <div class="lb-head">
+      <span class="lb-title">ATX Bench Power Supply</span>
+      <span class="lb-counter">1 / 5</span>
+      <button type="button" class="lb-close" aria-label="Close">&times;</button>
+    </div>
+    <div class="lb-stage">
+      <img class="lb-img" alt="">
+      <div class="lb-busy" aria-hidden="true"><span></span></div>
+      <button type="button" class="lb-nav lb-prev" aria-label="Previous">&#8249;</button><button type="button" class="lb-nav lb-next" aria-label="Next">&#8250;</button>
+    </div>
+  </div>
+</div>
+<script>window.__SITE__ = {"siteName":"The Workshop","tagline":"Where I like figuring out how things work, taking things apart, and building whatever comes to mind.\n\nA bit of *electronics*, *CAD*, *3D printing*, *computers* , and whatever else I happen to get interested in.\n\nI don't really have a specific box I fit into — I just like making things.","about":"","links":[],"showDates":true,"showMeta":false,"favicon":"1786723901232-506325-3182fc18-5347-4955-a95a-873f45f7f53d.png","social":[],"heroOverline":"Workshop active","termTitle":"root@workshop: ~","termScan":"workshop --scan","termFoot":"signal nominal","componentsTitle":"Parts","componentsSub":"","showComponents":true,"projectsTitle":"Projects","projectsSub":"","showProjects":true,"emptyProjects":"No projects yet.","backLabel":"All builds","tabTitle":""};</script>
+<script>window.__PROJECT__ = {"id":"c2c56d9494ae","slug":"atx-bench-power-supply","title":"ATX Bench Power Supply","subtitle":"Turned a dead computer PSU into a lab-grade desk supply","date":"2026-03-14","featured":true,"description":"## The build\n\nA dead 450 W ATX supply became the most-used thing on my bench. One weekend, a handful of parts, and a healthy respect for capacitors.\n\n- **Kept** the +12 V and +5 V rails, insulated the rest\n- **Added** a switchable output panel with banana jacks\n- **Wired** in a volt/amp meter with a 10 A shunt\n\n> Capacitors hold a deadly charge. I discharged everything twice before touching it.\n\n## Wiring\n\n```\nPSU +12V  ->  terminal strip  ->  meter  ->  banana jack (red)\nPSU GND   ->  terminal strip  ->  meter shunt ->  banana jack (black)\n```\n\n## What I'd change\n\nA proper *current-limit* module beats relying on the PSU's own protection. Design notes and a parts list are in the files below.","links":[{"label":"Build Log","url":"https://example.com/build-log"},{"label":"Hackaday","url":"https://example.com/atx-hackaday"},{"label":"GitHub","url":"https://github.com/"}],"photos":[{"path":"atx-bench-power-supply-1.svg","caption":"Finished unit on the desk"},{"path":"atx-bench-power-supply-2.svg","caption":"Internals and wiring"},{"path":"atx-bench-power-supply-3.svg","caption":"Output panel close-up"},{"path":"atx-bench-power-supply-4.svg","caption":"Load test with a car bulb"},{"path":"atx-bench-power-supply-5.svg","caption":"Bench setup with it in use"}],"files":[{"path":"atx-bench-power-supply-wiring.svg","name":"atx-bench-power-supply-wiring.svg"},{"path":"atx-bench-power-supply-case.stl","name":"atx-bench-power-supply-case.stl"},{"path":"atx-bench-power-supply-build-notes.txt","name":"atx-bench-power-supply-build-notes.txt"},{"path":"atx-bench-power-supply-bom.csv","name":"atx-bench-power-supply-bom.csv"},{"path":"1786758872125-321894-FAN-HOLDER.f3d","name":"FAN HOLDER.f3d"},{"path":"1786758971279-948495-case.stl","name":"case.stl"}],"createdAt":"2026-08-14T15:41:31.026Z","updatedAt":"2026-08-15T01:56:17.580Z","version":2,"versionNote":"Added the volt/amp meter, banana jack output panel, and a proper fusing module.","versions":[{"version":1,"note":"Lorem ipsum dolor sit amet — first working revision: rails wired straight to a terminal strip, no meter, no panel.","savedAt":"2026-08-02T15:41:31.026Z","data":{"title":"ATX Bench Power Supply","subtitle":"Initial hack — bare +12 V / +5 V rails off a terminal strip","description":"## First revision\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit — the very first working state, captured before any of the panel work.\n\n- +12 V and +5 V rails taken off a bare terminal strip\n- No meter, no fusing, no output panel\n- The whole thing was a working-but-scary bench hack\n\nIt earned a proper panel later — that version is what you see now.","date":"2026-02-26","showDate":true,"featured":true,"status":"done","related":[],"tags":[],"links":[{"label":"Build Log","url":"https://example.com/build-log"}],"photos":[{"path":"atx-bench-power-supply-1.svg","caption":"Finished unit on the desk"},{"path":"atx-bench-power-supply-2.svg","caption":"Internals and wiring"},{"path":"atx-bench-power-supply-3.svg","caption":"Output panel close-up"}],"files":[{"path":"atx-bench-power-supply-wiring.svg","name":"atx-bench-power-supply-wiring.svg"}],"model3d":""}}],"kind":"project","status":"done","related":[],"model3d":"1786758971279-948495-case.stl","showDate":true,"tags":[]};</script>
+<script>window.__MEDIA_PREFIX__ = "../../assets/media/";</script>
+<script type="importmap">{"imports":{"three":"https://unpkg.com/three@0.160.0/build/three.module.js","three/addons/":"https://unpkg.com/three@0.160.0/examples/jsm/","three/examples/jsm/":"https://unpkg.com/three@0.160.0/examples/jsm/"}}</script>
+<script type="module" src="app3d.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+# plate.obj (demo) — mirrored from case.stl top
+mtllib none
+o plate
+v 0 0 0
+v 120 0 0
+v 120 340 0
+v 0 340 0
+f 1 2 3 4

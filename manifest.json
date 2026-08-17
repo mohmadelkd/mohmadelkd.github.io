@@ -1,0 +1,488 @@
+{
+  "siteName": "The Workshop",
+  "tagline": "Where I like figuring out how things work, taking things apart, and building whatever comes to mind.\n\nA bit of *electronics*, *CAD*, *3D printing*, *computers* , and whatever else I happen to get interested in.\n\nI don't really have a specific box I fit into — I just like making things.",
+  "projectCount": 6,
+  "projects": [
+    {
+      "id": "c2c56d9494ae",
+      "slug": "atx-bench-power-supply",
+      "title": "ATX Bench Power Supply",
+      "kind": "project",
+      "status": "done",
+      "version": 2,
+      "versionCount": 2,
+      "relatedCount": 0,
+      "date": "2026-03-14",
+      "featured": true,
+      "photoCount": 5,
+      "fileCount": 6,
+      "linkCount": 3
+    },
+    {
+      "id": "686462b1116e",
+      "slug": "led-infinity-mirror",
+      "title": "LED Infinity Mirror",
+      "kind": "project",
+      "status": "done",
+      "version": 1,
+      "versionCount": 1,
+      "relatedCount": 0,
+      "date": "2025-11-02",
+      "featured": false,
+      "photoCount": 5,
+      "fileCount": 3,
+      "linkCount": 2
+    },
+    {
+      "id": "5df418508a44",
+      "slug": "split-mechanical-keyboard",
+      "title": "Split Mechanical Keyboard",
+      "kind": "project",
+      "status": "done",
+      "version": 1,
+      "versionCount": 1,
+      "relatedCount": 0,
+      "date": "2025-05-18",
+      "featured": true,
+      "photoCount": 6,
+      "fileCount": 5,
+      "linkCount": 3
+    },
+    {
+      "id": "18b18b9a3373",
+      "slug": "desktop-audio-amp",
+      "title": "Desktop Audio Amp",
+      "kind": "project",
+      "status": "done",
+      "version": 1,
+      "versionCount": 1,
+      "relatedCount": 1,
+      "date": "2024-06-11",
+      "featured": false,
+      "photoCount": 6,
+      "fileCount": 5,
+      "linkCount": 2
+    },
+    {
+      "id": "b02b6b18413c",
+      "slug": "motor-clamp-adapter",
+      "title": "Motor Clamp Adapter",
+      "kind": "component",
+      "status": "in-progress",
+      "version": 2,
+      "versionCount": 2,
+      "relatedCount": 0,
+      "date": "2026-04-02",
+      "featured": false,
+      "photoCount": 3,
+      "fileCount": 2,
+      "linkCount": 1
+    },
+    {
+      "id": "935cdc9c050a",
+      "slug": "amp-fan-shroud",
+      "title": "Amp Cooling Fan Shroud",
+      "kind": "component",
+      "status": "done",
+      "version": 1,
+      "versionCount": 1,
+      "relatedCount": 0,
+      "date": "2026-05-18",
+      "featured": false,
+      "photoCount": 2,
+      "fileCount": 2,
+      "linkCount": 1
+    }
+  ],
+  "files": [
+    {
+      "path": "assets/media/1786723901232-506325-3182fc18-5347-4955-a95a-873f45f7f53d.png",
+      "size": 903290
+    },
+    {
+      "path": "index.html",
+      "size": 10627
+    },
+    {
+      "path": "404.html",
+      "size": 2460
+    },
+    {
+      "path": "projects/atx-bench-power-supply/index.html",
+      "size": 17318
+    },
+    {
+      "path": "projects/atx-bench-power-supply/theme.css",
+      "size": 51905
+    },
+    {
+      "path": "projects/atx-bench-power-supply/app.js",
+      "size": 23155
+    },
+    {
+      "path": "projects/atx-bench-power-supply/app3d.js",
+      "size": 11956
+    },
+    {
+      "path": "projects/atx-bench-power-supply/v1/index.html",
+      "size": 9027
+    },
+    {
+      "path": "projects/atx-bench-power-supply/v1/theme.css",
+      "size": 51905
+    },
+    {
+      "path": "projects/atx-bench-power-supply/v1/app.js",
+      "size": 23155
+    },
+    {
+      "path": "assets/media/atx-bench-power-supply-1.svg",
+      "size": 2892
+    },
+    {
+      "path": "assets/media/atx-bench-power-supply-2.svg",
+      "size": 2892
+    },
+    {
+      "path": "assets/media/atx-bench-power-supply-3.svg",
+      "size": 2892
+    },
+    {
+      "path": "assets/media/atx-bench-power-supply-wiring.svg",
+      "size": 1545
+    },
+    {
+      "path": "assets/media/atx-bench-power-supply-1.svg",
+      "size": 2892
+    },
+    {
+      "path": "assets/media/atx-bench-power-supply-2.svg",
+      "size": 2892
+    },
+    {
+      "path": "assets/media/atx-bench-power-supply-3.svg",
+      "size": 2892
+    },
+    {
+      "path": "assets/media/atx-bench-power-supply-4.svg",
+      "size": 2892
+    },
+    {
+      "path": "assets/media/atx-bench-power-supply-5.svg",
+      "size": 2891
+    },
+    {
+      "path": "assets/media/atx-bench-power-supply-wiring.svg",
+      "size": 1545
+    },
+    {
+      "path": "assets/media/atx-bench-power-supply-case.stl",
+      "size": 11849
+    },
+    {
+      "path": "assets/media/atx-bench-power-supply-build-notes.txt",
+      "size": 513
+    },
+    {
+      "path": "assets/media/atx-bench-power-supply-bom.csv",
+      "size": 290
+    },
+    {
+      "path": "assets/media/1786758872125-321894-FAN-HOLDER.f3d",
+      "size": 182849
+    },
+    {
+      "path": "assets/media/1786758971279-948495-case.stl",
+      "size": 58084
+    },
+    {
+      "path": "assets/media/1786758971279-948495-case.stl",
+      "size": 58084
+    },
+    {
+      "path": "projects/led-infinity-mirror/index.html",
+      "size": 12567
+    },
+    {
+      "path": "projects/led-infinity-mirror/theme.css",
+      "size": 51905
+    },
+    {
+      "path": "projects/led-infinity-mirror/app.js",
+      "size": 23155
+    },
+    {
+      "path": "projects/led-infinity-mirror/app3d.js",
+      "size": 11956
+    },
+    {
+      "path": "assets/media/led-infinity-mirror-1.svg",
+      "size": 2448
+    },
+    {
+      "path": "assets/media/led-infinity-mirror-2.svg",
+      "size": 2448
+    },
+    {
+      "path": "assets/media/led-infinity-mirror-3.svg",
+      "size": 2448
+    },
+    {
+      "path": "assets/media/led-infinity-mirror-4.svg",
+      "size": 2448
+    },
+    {
+      "path": "assets/media/led-infinity-mirror-5.svg",
+      "size": 2447
+    },
+    {
+      "path": "assets/media/led-infinity-mirror-firmware.ino",
+      "size": 404
+    },
+    {
+      "path": "assets/media/led-infinity-mirror-frame.stl",
+      "size": 25229
+    },
+    {
+      "path": "assets/media/led-infinity-mirror-assembly.md",
+      "size": 298
+    },
+    {
+      "path": "assets/media/led-infinity-mirror-frame.stl",
+      "size": 25229
+    },
+    {
+      "path": "projects/split-mechanical-keyboard/index.html",
+      "size": 15247
+    },
+    {
+      "path": "projects/split-mechanical-keyboard/theme.css",
+      "size": 51905
+    },
+    {
+      "path": "projects/split-mechanical-keyboard/app.js",
+      "size": 23155
+    },
+    {
+      "path": "projects/split-mechanical-keyboard/app3d.js",
+      "size": 11956
+    },
+    {
+      "path": "assets/media/split-mechanical-keyboard-1.svg",
+      "size": 2730
+    },
+    {
+      "path": "assets/media/split-mechanical-keyboard-2.svg",
+      "size": 2730
+    },
+    {
+      "path": "assets/media/split-mechanical-keyboard-3.svg",
+      "size": 2730
+    },
+    {
+      "path": "assets/media/split-mechanical-keyboard-4.svg",
+      "size": 2730
+    },
+    {
+      "path": "assets/media/split-mechanical-keyboard-5.svg",
+      "size": 2729
+    },
+    {
+      "path": "assets/media/split-mechanical-keyboard-6.svg",
+      "size": 2729
+    },
+    {
+      "path": "assets/media/split-mechanical-keyboard-case.stl",
+      "size": 13573
+    },
+    {
+      "path": "assets/media/split-mechanical-keyboard-plate.obj",
+      "size": 120
+    },
+    {
+      "path": "assets/media/split-mechanical-keyboard-keymap.c",
+      "size": 654
+    },
+    {
+      "path": "assets/media/split-mechanical-keyboard-layout.json",
+      "size": 338
+    },
+    {
+      "path": "assets/media/split-mechanical-keyboard-layout.gltf",
+      "size": 1974
+    },
+    {
+      "path": "assets/media/split-mechanical-keyboard-case.stl",
+      "size": 13573
+    },
+    {
+      "path": "projects/desktop-audio-amp/index.html",
+      "size": 14816
+    },
+    {
+      "path": "projects/desktop-audio-amp/theme.css",
+      "size": 51905
+    },
+    {
+      "path": "projects/desktop-audio-amp/app.js",
+      "size": 23155
+    },
+    {
+      "path": "projects/desktop-audio-amp/app3d.js",
+      "size": 11956
+    },
+    {
+      "path": "assets/media/desktop-audio-amp-1.svg",
+      "size": 2550
+    },
+    {
+      "path": "assets/media/desktop-audio-amp-2.svg",
+      "size": 2550
+    },
+    {
+      "path": "assets/media/desktop-audio-amp-3.svg",
+      "size": 2550
+    },
+    {
+      "path": "assets/media/desktop-audio-amp-4.svg",
+      "size": 2550
+    },
+    {
+      "path": "assets/media/desktop-audio-amp-5.svg",
+      "size": 2549
+    },
+    {
+      "path": "assets/media/desktop-audio-amp-6.svg",
+      "size": 2549
+    },
+    {
+      "path": "assets/media/desktop-audio-amp-enclosure.stl",
+      "size": 35699
+    },
+    {
+      "path": "assets/media/desktop-audio-amp-schematic.svg",
+      "size": 1526
+    },
+    {
+      "path": "assets/media/desktop-audio-amp-bom.csv",
+      "size": 290
+    },
+    {
+      "path": "assets/media/desktop-audio-amp-build-notes.txt",
+      "size": 513
+    },
+    {
+      "path": "assets/media/desktop-audio-amp-datasheet.pdf",
+      "size": 1401
+    },
+    {
+      "path": "assets/media/desktop-audio-amp-enclosure.stl",
+      "size": 35699
+    },
+    {
+      "path": "components/motor-clamp-adapter/index.html",
+      "size": 25163
+    },
+    {
+      "path": "components/motor-clamp-adapter/theme.css",
+      "size": 51905
+    },
+    {
+      "path": "components/motor-clamp-adapter/app.js",
+      "size": 23155
+    },
+    {
+      "path": "components/motor-clamp-adapter/app3d.js",
+      "size": 11956
+    },
+    {
+      "path": "components/motor-clamp-adapter/v1/index.html",
+      "size": 22318
+    },
+    {
+      "path": "components/motor-clamp-adapter/v1/theme.css",
+      "size": 51905
+    },
+    {
+      "path": "components/motor-clamp-adapter/v1/app.js",
+      "size": 23155
+    },
+    {
+      "path": "components/motor-clamp-adapter/v1/app3d.js",
+      "size": 11956
+    },
+    {
+      "path": "assets/media/motor-clamp-adapter-1.svg",
+      "size": 2887
+    },
+    {
+      "path": "assets/media/motor-clamp-adapter-2.svg",
+      "size": 2887
+    },
+    {
+      "path": "assets/media/motor-clamp-adapter-clamp.stl",
+      "size": 5913
+    },
+    {
+      "path": "assets/media/motor-clamp-adapter-1.svg",
+      "size": 2887
+    },
+    {
+      "path": "assets/media/motor-clamp-adapter-2.svg",
+      "size": 2887
+    },
+    {
+      "path": "assets/media/motor-clamp-adapter-3.svg",
+      "size": 2887
+    },
+    {
+      "path": "assets/media/motor-clamp-adapter-clamp.stl",
+      "size": 5913
+    },
+    {
+      "path": "assets/media/motor-clamp-adapter-assembly.md",
+      "size": 180
+    },
+    {
+      "path": "assets/media/motor-clamp-adapter-clamp.stl",
+      "size": 5913
+    },
+    {
+      "path": "components/amp-fan-shroud/index.html",
+      "size": 9679
+    },
+    {
+      "path": "components/amp-fan-shroud/theme.css",
+      "size": 51905
+    },
+    {
+      "path": "components/amp-fan-shroud/app.js",
+      "size": 23155
+    },
+    {
+      "path": "components/amp-fan-shroud/app3d.js",
+      "size": 11956
+    },
+    {
+      "path": "assets/media/amp-fan-shroud-1.svg",
+      "size": 2886
+    },
+    {
+      "path": "assets/media/amp-fan-shroud-2.svg",
+      "size": 2886
+    },
+    {
+      "path": "assets/media/amp-fan-shroud-shroud.stl",
+      "size": 4429
+    },
+    {
+      "path": "assets/media/amp-fan-shroud-assembly.md",
+      "size": 159
+    },
+    {
+      "path": "assets/media/amp-fan-shroud-shroud.stl",
+      "size": 4429
+    }
+  ],
+  "totalSize": 2222381
+}

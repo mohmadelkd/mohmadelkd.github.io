@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Split Mechanical Keyboard · The Workshop</title>
+<meta name="description" content="Hand-wired columnar split with custom QMK firmware">
+<script>document.documentElement.classList.add('js');</script>
+<style>.js body{opacity:0}</style>
+<link rel="stylesheet" href="theme.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Fraunces:ital,opsz,wght@1,9..144,400;1,9..144,600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Fraunces:ital,opsz,wght@1,9..144,400;1,9..144,600&display=swap" rel="stylesheet"></noscript>
+<link rel="icon" href="../../assets/media/1786723901232-506325-3182fc18-5347-4955-a95a-873f45f7f53d.png">
+<style>:root{--accent:#8b5cf6;--accent-2:#22d3ee;--radius:12px;--page-max:1120px;--grid-min:320px}</style>
+</head>
+<body data-page="project" class="anim-lively">
+
+
+<main class="project-main">
+  <div class="project-top" data-reveal="fade">
+    <a class="back-btn" href="../../"><span class="back-arrow" aria-hidden="true">&larr;</span> All builds</a>
+    <span class="project-crumb">Home <span>/</span> Project</span>
+  </div>
+  <header class="project-header">
+    <div class="project-title-row" data-reveal>
+      <h1>Split Mechanical Keyboard</h1>
+      <div class="title-side"><span class="date-badge date-badge-lg">May 18, 2025</span></div>
+    </div>
+    
+    <p class="project-subtitle" data-reveal>Hand-wired columnar split with custom QMK firmware</p>
+  </header>
+
+  
+  <section class="gallery" data-gallery="[{&quot;path&quot;:&quot;split-mechanical-keyboard-1.svg&quot;,&quot;caption&quot;:&quot;Both halves wired&quot;},{&quot;path&quot;:&quot;split-mechanical-keyboard-2.svg&quot;,&quot;caption&quot;:&quot;3D-printed case plate&quot;},{&quot;path&quot;:&quot;split-mechanical-keyboard-3.svg&quot;,&quot;caption&quot;:&quot;On the desk mid-build&quot;},{&quot;path&quot;:&quot;split-mechanical-keyboard-4.svg&quot;,&quot;caption&quot;:&quot;Thumb cluster detail&quot;},{&quot;path&quot;:&quot;split-mechanical-keyboard-5.svg&quot;,&quot;caption&quot;:&quot;Soldering the matrix&quot;},{&quot;path&quot;:&quot;split-mechanical-keyboard-6.svg&quot;,&quot;caption&quot;:&quot;Final typing test&quot;}]" data-reveal>
+    <div class="gallery-stage">
+      <div class="gallery-frame"><img class="gallery-main" src="../../assets/media/split-mechanical-keyboard-1.svg" alt="Split Mechanical Keyboard"></div>
+      <button class="gal-nav gal-prev" aria-label="Previous">&#8249;</button><button class="gal-nav gal-next" aria-label="Next">&#8250;</button>
+      <div class="gal-bar">
+        <span class="gal-counter">1 / 6</span>
+      </div>
+    </div>
+    <div class="gallery-thumbs"><button type="button" class="gallery-thumb" aria-label="Both halves wired"><img src="../../assets/media/split-mechanical-keyboard-1.svg" alt="" loading="lazy"></button><button type="button" class="gallery-thumb" aria-label="3D-printed case plate"><img src="../../assets/media/split-mechanical-keyboard-2.svg" alt="" loading="lazy"></button><button type="button" class="gallery-thumb" aria-label="On the desk mid-build"><img src="../../assets/media/split-mechanical-keyboard-3.svg" alt="" loading="lazy"></button><button type="button" class="gallery-thumb" aria-label="Thumb cluster detail"><img src="../../assets/media/split-mechanical-keyboard-4.svg" alt="" loading="lazy"></button><button type="button" class="gallery-thumb" aria-label="Soldering the matrix"><img src="../../assets/media/split-mechanical-keyboard-5.svg" alt="" loading="lazy"></button><button type="button" class="gallery-thumb" aria-label="Final typing test"><img src="../../assets/media/split-mechanical-keyboard-6.svg" alt="" loading="lazy"></button></div>
+  </section>
+
+  <section class="content prose" data-reveal><h3>The plan</h3>
+<p>A columnar-staggered split keyboard, hand-wired and running <strong>QMK</strong>. No PCB — a 3D-printed plate, a bag of switches, and a long evening with an iron.</p>
+<ul><li>Hand-wired <strong>5 × 3</strong> matrix per half plus a 3-key thumb cluster</li><li>Two <strong>Elite-C</strong> controllers with TRRS between halves</li><li>Rotary encoder on the left for volume</li></ul>
+<h3>Wiring</h3>
+<p>Each column is a diode-or&#39;d line; rows scan in software. The photo captions show the breadboard pass before I committed to solder.</p>
+<blockquote>Typing on it feels like flying. The stagger took one day to get used to.</blockquote>
+<p>Firmware and a JSON layout are in the files.</p></section>
+
+  
+  <section class="content" data-reveal>
+    <h2>3D Preview</h2>
+    <div class="model3d-card">
+      <div class="model3d" data-model="../../assets/media/split-mechanical-keyboard-case.stl">
+        <div class="model3d-bar" role="toolbar" aria-label="3D view controls">
+      <span class="model3d-hint">Drag to rotate &middot; scroll to zoom</span>
+      <button type="button" class="model3d-btn" data-view="home" title="Home view">⌂</button>
+      <button type="button" class="model3d-btn" data-view="zoom-in" title="Zoom in">+</button>
+      <button type="button" class="model3d-btn" data-view="zoom-out" title="Zoom out">−</button>
+      <button type="button" class="model3d-btn" data-view="grid" title="Toggle grid">▦</button>
+    </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="content" data-reveal><h2>Links</h2><div class="file-grid"><div class="file-chip link-row">
+        <a class="file-body link-body" href="https://example.com/qmk" target="_blank" rel="noopener" title="https://example.com/qmk">
+          <span class="file-name">QMK Fork</span>
+          <span class="link-url">example.com/qmk</span>
+        </a>
+        <a class="file-dl" href="https://example.com/qmk" target="_blank" rel="noopener" title="Open QMK Fork" aria-label="Open QMK Fork">↗</a>
+      </div><div class="file-chip link-row">
+        <a class="file-body link-body" href="https://example.com/layout" target="_blank" rel="noopener" title="https://example.com/layout">
+          <span class="file-name">Layout Editor</span>
+          <span class="link-url">example.com/layout</span>
+        </a>
+        <a class="file-dl" href="https://example.com/layout" target="_blank" rel="noopener" title="Open Layout Editor" aria-label="Open Layout Editor">↗</a>
+      </div><div class="file-chip link-row">
+        <a class="file-body link-body" href="https://github.com/" target="_blank" rel="noopener" title="https://github.com/">
+          <span class="file-name">GitHub</span>
+          <span class="link-url">github.com</span>
+        </a>
+        <a class="file-dl" href="https://github.com/" target="_blank" rel="noopener" title="Open GitHub" aria-label="Open GitHub">↗</a>
+      </div></div></section>
+  <section class="content" data-reveal><h2>Files</h2><div class="file-grid"><div class="file-chip">
+        <a class="file-body" href="../../assets/media/split-mechanical-keyboard-plate.obj" download="split-mechanical-keyboard-plate.obj">
+          <span class="file-badge">OBJ</span>
+          <span class="file-name">split-mechanical-keyboard-plate.obj</span>
+          <span class="file-size">120 B</span>
+        </a>
+        <button type="button" class="file-preview" data-preview="../../assets/media/split-mechanical-keyboard-plate.obj" data-type="model" data-name="split-mechanical-keyboard-plate.obj" title="Preview split-mechanical-keyboard-plate.obj">Preview</button>
+        <a class="file-dl" href="../../assets/media/split-mechanical-keyboard-plate.obj" download="split-mechanical-keyboard-plate.obj" title="Download split-mechanical-keyboard-plate.obj" aria-label="Download split-mechanical-keyboard-plate.obj">↓</a>
+      </div><div class="file-chip">
+        <a class="file-body" href="../../assets/media/split-mechanical-keyboard-keymap.c" download="split-mechanical-keyboard-keymap.c">
+          <span class="file-badge">C</span>
+          <span class="file-name">split-mechanical-keyboard-keymap.c</span>
+          <span class="file-size">654 B</span>
+        </a>
+        <button type="button" class="file-preview" data-preview="../../assets/media/split-mechanical-keyboard-keymap.c" data-type="text" data-name="split-mechanical-keyboard-keymap.c" title="Preview split-mechanical-keyboard-keymap.c">Preview</button>
+        <a class="file-dl" href="../../assets/media/split-mechanical-keyboard-keymap.c" download="split-mechanical-keyboard-keymap.c" title="Download split-mechanical-keyboard-keymap.c" aria-label="Download split-mechanical-keyboard-keymap.c">↓</a>
+      </div><div class="file-chip">
+        <a class="file-body" href="../../assets/media/split-mechanical-keyboard-layout.json" download="split-mechanical-keyboard-layout.json">
+          <span class="file-badge">JSON</span>
+          <span class="file-name">split-mechanical-keyboard-layout.json</span>
+          <span class="file-size">338 B</span>
+        </a>
+        <button type="button" class="file-preview" data-preview="../../assets/media/split-mechanical-keyboard-layout.json" data-type="text" data-name="split-mechanical-keyboard-layout.json" title="Preview split-mechanical-keyboard-layout.json">Preview</button>
+        <a class="file-dl" href="../../assets/media/split-mechanical-keyboard-layout.json" download="split-mechanical-keyboard-layout.json" title="Download split-mechanical-keyboard-layout.json" aria-label="Download split-mechanical-keyboard-layout.json">↓</a>
+      </div><div class="file-chip">
+        <a class="file-body" href="../../assets/media/split-mechanical-keyboard-layout.gltf" download="split-mechanical-keyboard-layout.gltf">
+          <span class="file-badge">GLTF</span>
+          <span class="file-name">split-mechanical-keyboard-layout.gltf</span>
+          <span class="file-size">1.9 KB</span>
+        </a>
+        <button type="button" class="file-preview" data-preview="../../assets/media/split-mechanical-keyboard-layout.gltf" data-type="model" data-name="split-mechanical-keyboard-layout.gltf" title="Preview split-mechanical-keyboard-layout.gltf">Preview</button>
+        <a class="file-dl" href="../../assets/media/split-mechanical-keyboard-layout.gltf" download="split-mechanical-keyboard-layout.gltf" title="Download split-mechanical-keyboard-layout.gltf" aria-label="Download split-mechanical-keyboard-layout.gltf">↓</a>
+      </div></div></section>
+
+  
+
+  
+  <nav class="proj-nav" data-reveal>
+    <a class="proj-nav-link" href="../led-infinity-mirror/"><span class="pn-dir">← Previous</span><span class="pn-title">LED Infinity Mirror</span></a>
+    <a class="proj-nav-link next" href="../desktop-audio-amp/"><span class="pn-dir">Next →</span><span class="pn-title">Desktop Audio Amp</span></a>
+  </nav>
+</main>
+<footer class="footer" data-reveal="fade"><div class="footer-inner"></div></footer>
+<div class="lightbox" hidden>
+  <div class="lb-panel">
+    <div class="lb-head">
+      <span class="lb-title">Split Mechanical Keyboard</span>
+      <span class="lb-counter">1 / 6</span>
+      <button type="button" class="lb-close" aria-label="Close">&times;</button>
+    </div>
+    <div class="lb-stage">
+      <img class="lb-img" alt="">
+      <div class="lb-busy" aria-hidden="true"><span></span></div>
+      <button type="button" class="lb-nav lb-prev" aria-label="Previous">&#8249;</button><button type="button" class="lb-nav lb-next" aria-label="Next">&#8250;</button>
+    </div>
+  </div>
+</div>
+<script>window.__SITE__ = {"siteName":"The Workshop","tagline":"Where I like figuring out how things work, taking things apart, and building whatever comes to mind.\n\nA bit of *electronics*, *CAD*, *3D printing*, *computers* , and whatever else I happen to get interested in.\n\nI don't really have a specific box I fit into — I just like making things.","about":"","links":[],"showDates":true,"showMeta":false,"favicon":"1786723901232-506325-3182fc18-5347-4955-a95a-873f45f7f53d.png","social":[],"heroOverline":"Workshop active","termTitle":"root@workshop: ~","termScan":"workshop --scan","termFoot":"signal nominal","componentsTitle":"Parts","componentsSub":"","showComponents":true,"projectsTitle":"Projects","projectsSub":"","showProjects":true,"emptyProjects":"No projects yet.","backLabel":"All builds","tabTitle":""};</script>
+<script>window.__PROJECT__ = {"id":"5df418508a44","slug":"split-mechanical-keyboard","title":"Split Mechanical Keyboard","subtitle":"Hand-wired columnar split with custom QMK firmware","date":"2025-05-18","featured":true,"description":"## The plan\n\nA columnar-staggered split keyboard, hand-wired and running **QMK**. No PCB — a 3D-printed plate, a bag of switches, and a long evening with an iron.\n\n- Hand-wired **5 × 3** matrix per half plus a 3-key thumb cluster\n- Two **Elite-C** controllers with TRRS between halves\n- Rotary encoder on the left for volume\n\n## Wiring\n\nEach column is a diode-or'd line; rows scan in software. The photo captions show the breadboard pass before I committed to solder.\n\n> Typing on it feels like flying. The stagger took one day to get used to.\n\nFirmware and a JSON layout are in the files.","links":[{"label":"QMK Fork","url":"https://example.com/qmk"},{"label":"Layout Editor","url":"https://example.com/layout"},{"label":"GitHub","url":"https://github.com/"}],"photos":[{"path":"split-mechanical-keyboard-1.svg","caption":"Both halves wired"},{"path":"split-mechanical-keyboard-2.svg","caption":"3D-printed case plate"},{"path":"split-mechanical-keyboard-3.svg","caption":"On the desk mid-build"},{"path":"split-mechanical-keyboard-4.svg","caption":"Thumb cluster detail"},{"path":"split-mechanical-keyboard-5.svg","caption":"Soldering the matrix"},{"path":"split-mechanical-keyboard-6.svg","caption":"Final typing test"}],"files":[{"path":"split-mechanical-keyboard-case.stl","name":"split-mechanical-keyboard-case.stl"},{"path":"split-mechanical-keyboard-plate.obj","name":"split-mechanical-keyboard-plate.obj"},{"path":"split-mechanical-keyboard-keymap.c","name":"split-mechanical-keyboard-keymap.c"},{"path":"split-mechanical-keyboard-layout.json","name":"split-mechanical-keyboard-layout.json"},{"path":"split-mechanical-keyboard-layout.gltf","name":"split-mechanical-keyboard-layout.gltf"}],"createdAt":"2026-08-14T15:41:31.027Z","updatedAt":"2026-08-14T15:41:31.027Z","kind":"project","status":"done","related":[],"model3d":"split-mechanical-keyboard-case.stl"};</script>
+<script>window.__MEDIA_PREFIX__ = "../../assets/media/";</script>
+<script type="importmap">{"imports":{"three":"https://unpkg.com/three@0.160.0/build/three.module.js","three/addons/":"https://unpkg.com/three@0.160.0/examples/jsm/","three/examples/jsm/":"https://unpkg.com/three@0.160.0/examples/jsm/"}}</script>
+<script type="module" src="app3d.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
