@@ -1,8 +1,23 @@
 {
   "siteName": "The Workshop",
   "tagline": "Where I like figuring out how things work, taking things apart, and building whatever comes to mind.\n\nA bit of *electronics*, *CAD*, *3D printing*, *computers* , and whatever else I happen to get interested in.\n\nI don't really have a specific box I fit into — I just like making things.",
-  "projectCount": 6,
+  "projectCount": 8,
   "projects": [
+    {
+      "id": "9a610211791b",
+      "slug": "psu",
+      "title": "PSU",
+      "kind": "project",
+      "status": "done",
+      "version": 1,
+      "versionCount": 1,
+      "relatedCount": 0,
+      "date": null,
+      "featured": false,
+      "photoCount": 1,
+      "fileCount": 0,
+      "linkCount": 0
+    },
     {
       "id": "c2c56d9494ae",
       "slug": "atx-bench-power-supply",
@@ -64,6 +79,21 @@
       "linkCount": 2
     },
     {
+      "id": "0d9d4c138cc9",
+      "slug": "clamp",
+      "title": "Clamp",
+      "kind": "component",
+      "status": "done",
+      "version": 1,
+      "versionCount": 1,
+      "relatedCount": 0,
+      "date": null,
+      "featured": false,
+      "photoCount": 1,
+      "fileCount": 0,
+      "linkCount": 0
+    },
+    {
       "id": "b02b6b18413c",
       "slug": "motor-clamp-adapter",
       "title": "Motor Clamp Adapter",
@@ -101,15 +131,39 @@
     },
     {
       "path": "index.html",
-      "size": 10627
+      "size": 11802
     },
     {
       "path": "404.html",
       "size": 2460
     },
     {
+      "path": "projects/psu/index.html",
+      "size": 5399
+    },
+    {
+      "path": "projects/psu/theme.css",
+      "size": 51905
+    },
+    {
+      "path": "projects/psu/app.js",
+      "size": 23155
+    },
+    {
+      "path": "projects/psu/app3d.js",
+      "size": 11956
+    },
+    {
+      "path": "assets/media/1787009137458-168789-PSU.jpg",
+      "size": 127960
+    },
+    {
+      "path": "assets/media/1787009141469-368286-PSU-Panel.stl",
+      "size": 689684
+    },
+    {
       "path": "projects/atx-bench-power-supply/index.html",
-      "size": 17318
+      "size": 17422
     },
     {
       "path": "projects/atx-bench-power-supply/theme.css",
@@ -125,7 +179,7 @@
     },
     {
       "path": "projects/atx-bench-power-supply/v1/index.html",
-      "size": 9027
+      "size": 9134
     },
     {
       "path": "projects/atx-bench-power-supply/v1/theme.css",
@@ -380,8 +434,32 @@
       "size": 35699
     },
     {
+      "path": "components/clamp/index.html",
+      "size": 5566
+    },
+    {
+      "path": "components/clamp/theme.css",
+      "size": 51905
+    },
+    {
+      "path": "components/clamp/app.js",
+      "size": 23155
+    },
+    {
+      "path": "components/clamp/app3d.js",
+      "size": 11956
+    },
+    {
+      "path": "assets/media/1787009162953-368238-20260817_150323.jpg.jpeg",
+      "size": 8018226
+    },
+    {
+      "path": "assets/media/1787009168032-636021-Clamp.stl",
+      "size": 524484
+    },
+    {
       "path": "components/motor-clamp-adapter/index.html",
-      "size": 25163
+      "size": 25271
     },
     {
       "path": "components/motor-clamp-adapter/theme.css",
@@ -397,7 +475,7 @@
     },
     {
       "path": "components/motor-clamp-adapter/v1/index.html",
-      "size": 22318
+      "size": 22429
     },
     {
       "path": "components/motor-clamp-adapter/v1/theme.css",
@@ -484,5 +562,5 @@
       "size": 4429
     }
   ],
-  "totalSize": 2222381
+  "totalSize": 11769337
 }
