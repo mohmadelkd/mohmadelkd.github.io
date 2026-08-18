@@ -131,7 +131,7 @@
     },
     {
       "path": "index.html",
-      "size": 11802
+      "size": 11787
     },
     {
       "path": "404.html",
@@ -435,7 +435,7 @@
     },
     {
       "path": "components/clamp/index.html",
-      "size": 5566
+      "size": 5521
     },
     {
       "path": "components/clamp/theme.css",
@@ -450,8 +450,8 @@
       "size": 11956
     },
     {
-      "path": "assets/media/1787009162953-368238-20260817_150323.jpg.jpeg",
-      "size": 8018226
+      "path": "assets/media/1787051590402-775732-clamp.jpg",
+      "size": 442932
     },
     {
       "path": "assets/media/1787009168032-636021-Clamp.stl",
@@ -562,5 +562,5 @@
       "size": 4429
     }
   ],
-  "totalSize": 11769337
+  "totalSize": 4193983
 }
